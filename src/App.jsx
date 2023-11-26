@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { React } from 'react'
+import styled from "styled-components"
+import('./App.css')
+import Section from './components/Section'
+
+const Title = styled.h1`
+  color: #b19cd9;
+`
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Title>Progress Tracker</Title>
+        <div>
+          <Section text="M" progress={250}/>
+          <Section text="T" progress={190}/>
+          <Section text="W" progress={144}/>
+          <Section text="T" progress={30}/>
+          <Section text="F" progress={205}/>
+          <Section text="S" progress={80}/>
+          <Section text="S" progress={100}/>
+        </div>
     </>
   )
 }

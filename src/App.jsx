@@ -12,12 +12,12 @@ function App() {
     <>
         <Title>Progress Tracker</Title>
         <div>
-          <Section text="M" progress={250}/>
-          <Section text="T" progress={190}/>
-          <Section text="W" progress={144}/>
+          <Section text="M" progress={50}/>
+          <Section text="T" progress={90}/>
+          <Section text="W" progress={44}/>
           <Section text="T" progress={30}/>
-          <Section text="F" progress={205}/>
-          <Section text="S" progress={80}/>
+          <Section text="F" progress={20}/>
+          <Section text="S" />
           <Section text="S" progress={100}/>
         </div>
     </>

@@ -17,7 +17,7 @@ const StyledSection = styled.section`
 const WeekdayTitle = styled.div`
     display: flex;
     justify-content: center;
-    width: 50px;
+    min-width: 50px;
     border-right: solid 3px lightgrey;
 `
 

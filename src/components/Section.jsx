@@ -25,11 +25,17 @@ const WeekendTitle = styled(WeekdayTitle)`
     background-color: #2cf5e4;
 `
 
+const ProgressBarContainer = styled.div`
+    width: 250px;
+`
+
 const Section = ({text, progress}) => {
     return (
         <StyledSection>
             {text === "S" ? <WeekendTitle>{text}</WeekendTitle> : <WeekdayTitle>{text}</WeekdayTitle>}
-            <ProgressBar progressBar={progress}></ProgressBar>
+            <ProgressBarContainer>
+                <ProgressBar progressBar={progress}></ProgressBar>
+            </ProgressBarContainer>
         </StyledSection>
     )
 }

@@ -6,9 +6,10 @@ const StyledProgressBar = styled.div`
     width: ${({progress}) => progress || 0}%;
     height: 50px;
     background-color: ${({progress}) => {
-        if (progress > 50) return "#0658d6"
-        else if (progress < 50 && progress > 20) return "#5187db"
-        else return "#93afdb"}};
+        if (progress > 70) return "green"
+        else if (progress <= 70 && progress > 50) return "orange"
+        else if (progress <= 50 && progress > 20) return "yellow"
+        else return "red"}};
 `
 
 const ProgressBar = ({progressBar}) => {
